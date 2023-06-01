@@ -11,6 +11,7 @@ function getUserStatistics() {
             const userProfileDiv = document.querySelector('.user-profile');
             userProfileDiv.innerHTML = `
                 <h1>${user_data.name} (${user_data.login})</h1>
+                <img src="${user_data.avatar_url}" alt="Image Description">
                 <p>${user_data.bio}</p>
                 <p>Location: ${user_data.location}</p>
                 <p>Followers: ${user_data.followers}</p>
